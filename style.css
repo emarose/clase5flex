@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&family=Raleway:wght@200;500&family=Suranna&family=Trocchi&display=swap');
+
+:root{
+  --dark-clr:rgb(80,80,80);
+  --dark-gray-clr:rgb(110,110,110);
+  --gray-clr: rgb(204,206,211);
+  --light-green-clr: #9cebd5;
+  --font1: 'Bentham', serif;
+  --font2: 'Raleway', sans-serif;
+  --font3: 'Trocchi', serif;
+  --font4: 'Suranna', serif;
+}
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-size: 100%;
+}
+.cardContainer{
+  margin: 60px;
+}
+
+.card{
+  position: relative;
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  height: 419px;
+  width: 630px;
+  overflow: hidden;
+}
+.cardImg{
+  float: left;
+}
+.cardBody{
+  position: absolute;
+  right: 0;
+  padding: 40px 20px;
+  width: 50%;
+}
+
+.cardTitle{
+  margin: 20px 0 40px 0;
+}
+
+.cardTitle h2{
+  color:var(--dark-clr);
+  font-size: 2rem;
+  font-family:var(--font1);
+}
+.cardTitle p{
+  color: var(--gray-clr);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  font-family:var(--font2);
+}
+
+.cardText{
+  color: var(--dark-gray-clr);
+  max-width: 37ch;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-family:var(--font1);
+}
+
+.priceBox{
+  margin-top: 20px;
+}
+.priceBox h2{
+  color: var(--dark-clr);
+  font-family: var(--font4);
+  font-size: 2rem;
+  display: inline;
+}
+.priceBox button{
+  color: #fff;
+  margin: 0 15px;
+  font-size: 1.1rem;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--light-green-clr);
+  font-family: var(--font2)
+}
+
+.priceBox button:hover{
+  background-color: #85b8a9;
+  cursor: pointer;
+}
